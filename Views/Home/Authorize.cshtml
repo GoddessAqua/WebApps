@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Авторизация</title>
+</head>
+<body>
+    <div>
+        <p>Вам необходимо авторизоваться:</p>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.Id" name="Id" />
+            <table>
+                <tr>
+                    <td>Логин:</td>
+                    <td><input type="text" name="Login" /> </td>
+                </tr>
+                <tr>
+                    <td>Пароль:</td>
+                    <td><input type="text" name="Password" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
